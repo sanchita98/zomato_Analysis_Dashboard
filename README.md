@@ -34,39 +34,46 @@ rank_table = DATATABLE("sort", INTEGER, "type", STRING, "NO", INTEGER, {
 })
 Used in a slicer to filter top cities dynamically.
 
-Insight: Tirupati and Baner-Pune dominate sales.
+Insight: Tirupati and Baner-Pune dominate sales
+Action: Expand service coverage in high-performing cities
 
-Action: Expand service coverage in high-performing cities.
 
-Overview Dashboard Highlights
-Section	Description
-Sales Overview	Shows total Sales Amount (986.6M), Quantity (2.4M), Orders (150.3K), and Ratings (148.5K).
-Yearly Sales Trend	Line chart showing sales growth in 2018–2019, then a drop in 2020.
-Food Type Sales	Displays Veg (156.2K), Non-Veg (139.9K), and Other sales with ratings.
-Top 10 Cities by Quantity	Interactive bar chart with dynamic Top N slicer (Top 5/10/20/50).
-Weekly Order Pattern	Shows that Fridays and Saturdays are peak order days; Sunday is lowest.
+| Section                    | Description                                                                               |
+| -------------------------- | ----------------------------------------------------------------------------------------- |
+| **Sales Overview**         | Shows total Sales Amount (986.6M), Quantity (2.4M), Orders (150.3K), and Ratings (148.5K) |
+| **Yearly Sales Trend**     | Line chart showing sales growth in 2018–2019, then a drop in 2020                         |
+| **Food Type Sales**        | Displays Veg (156.2K), Non-Veg (139.9K), and Other sales with ratings                     |
+| **Top Cities by Quantity** | Interactive bar chart with dynamic Top N slicer                                           |
+| **Weekly Order Pattern**   | Shows Fridays and Saturdays are peak order days; Sunday is lowest                         |
+
 
 💡 Key Insights
-Veg Sales Lead: With 156.2K in quantity, veg items top food orders, confirming a strong vegetarian preference.
+* **Veg Sales Lead:** With 156.2K in quantity, veg items top food orders, confirming a strong vegetarian preference.
 
-Electronic City dominates city-wise demand with 0.36M orders—3x more than the next best.
+* **Electronic City** dominates city-wise demand with 0.36M orders—3x more than the next best.
 
-Sales peaked in 2019, reflecting strong platform momentum before a 2020 drop.
+* **Sales peaked in 2019**, followed by a 2020 drop (likely pandemic-related)
 
-Fridays are most active, followed by Saturday. Sunday and Monday see a drop in engagement.
+* **Fridays are most active**, followed by Saturday. Sunday and Monday see a drop in engagement.
 
-Other food category also shows notable sales with 14.2K and a high rating—signals niche interest.
+* Other food category also shows notable sales with 14.2K and a high rating—signals niche interest.
 
 🚀 Business Growth Suggestions
-Capitalize on Veg Trends: Introduce more veg-focused combos or chef specials.
 
-Geo-target Top Cities: Push exclusive offers in Electronic City, Old Gurgaon, and Gorakhpur to maintain momentum.
+* Capitalize on Veg Trends:
+  Introduce more veg-focused combos or chef specials.
 
-Mid-week Marketing Push: Create campaigns to boost orders on Sunday–Monday (e.g., “Lazy Sunday Meals” or “Monday Mood Busters”).
+* Geo-target Top Cities:
+  Push exclusive offers in Electronic City, Old Gurgaon, and Gorakhpur to maintain momentum.
 
-Promote High-Rating ‘Other’ Food Types: Use them to differentiate and attract niche audiences.
+* Mid-week Marketing Push:
+  Create campaigns to boost orders on Sunday–Monday (e.g., “Lazy Sunday Meals” or “Monday Mood Busters”).
 
-Expand in Growth Regions: Analyze upcoming cities from the Top 50 slicer and partner with local vendors.
+* Promote High-Rating ‘Other’ Food Types:
+  Use them to differentiate and attract niche audiences.
+
+* Expand in Growth Regions:
+  Analyze upcoming cities from the Top 50 slicer and partner with local vendors.
 
 🧑‍💼 User Analysis Dashboard
 
@@ -77,49 +84,58 @@ DAX:
 user_count = DISTINCTCOUNT(users[user])
 active_user = DISTINCTCOUNT(orders[user_id])
 
-✨ Dashboard Highlights
-Section	Description
-Active Users	Displays total of 77.9K users currently active.
-Rating Given	Over 148.5K total ratings submitted by users.
-User Gains/Losses	11.6K gained customers and 33K lost users, broken down by gender.
-Total Orders	300.6K orders by 100K total users.
-Users by Age	Majority of users are aged 20–30, with a spike at age 22 (18.8K).
+✨ User Analysis Dashboard Highlights
+
+| Section               | Description                                 |
+| --------------------- | ------------------------------------------- |
+| **Active Users**      | 77.9K currently active users                |
+| **Rating Given**      | Over 148.5K ratings submitted               |
+| **User Gains/Losses** | 11.6K new customers, 33K lost (mostly male) |
+| **Total Orders**      | 300.6K orders from 100K users               |
+| **Users by Age**      | Most users aged 20–30; peak at 22 (18.8K)   |
+
 
 💡 Key Insights
-Retention Challenge: A net loss of over 21.4K users, especially males (18.9K lost).
 
-Peak Engagement: Age 22 is the most engaged, followed by 21 and 23.
+* Retention Challenge:
+  A net loss of over 21.4K users, especially males (18.9K lost).
 
-User Base: A large chunk of users are in their 20s, indicating a young, mobile-driven audience.
+* Peak Engagement:
+  Age 22 is the most engaged, followed by 21 and 23.
 
-Ratings per User: With 148.5K ratings and 100K users, users show high engagement post-order.
+* User Base:
+  A large chunk of users are in their 20s, indicating a young, mobile-driven audience.
+
+* Ratings per User:
+  With 148.5K ratings and 100K users, users show high engagement post-order.
 
 🚀 Recommendations for Growth
-Retention Campaigns for Male Users
 
-Design email/push notifications targeting male churn segment.
+* Retention Campaigns for Male Users
 
-Offer “Welcome Back” discounts and loyalty rewards.
+* Design email/push notifications targeting male churn segment.
 
-Age-Specific Promotions
+* Offer “Welcome Back” discounts and loyalty rewards.
+
+* Age-Specific Promotions
 
 Tailor offers to ages 20–25, using trendy food combos, student discounts, or wallet cashback.
 
-Referral Programs
+* Referral Programs
 
 Encourage highly active young users (ages 21–23) to refer friends.
 
-Reward with coupons or free delivery.
+* Reward with coupons or free delivery.
 
-Surveys & Feedback Collection
+* **Surveys & Feedback Collection**
 
-Ask users who stop ordering why (especially males).
+* Ask users who stop ordering why (especially males).
 
-Use feedback loops to improve app flow or pricing perception.
+* Use feedback loops to improve app flow or pricing perception.
 
-Push Notifications Based on Ratings
+* Push Notifications Based on Ratings
 
-Encourage repeat orders by using previous high ratings to recommend new restaurants.
+* Encourage repeat orders by using previous high ratings to recommend new restaurants.
 
 ![image](https://github.com/user-attachments/assets/06816b39-1bac-4d19-9244-3622df8b5120)
 
@@ -127,48 +143,53 @@ Encourage repeat orders by using previous high ratings to recommend new restaura
 🌍 City Performance Dashboard
 
 ✨ Dashboard Highlights
-Section	Description
-Top Restaurants by Rating	Domino’s (442), Pizza Hut (322), and KFC (309) lead in customer reviews.
-Sales by City	Cities like Tirupati, Electronic City, and Baner-Pune top in revenue.
-Rating by City	Bikaner, Noida-1, and Indirapuram show the most feedback from users.
-User by City	Highest user concentration in Bikaner, BTM-Bangalore, and Indiranagar.
-City-Wise Breakdown Table	Shows total sales, lost users, gained users, and orders across major cities.
+
+| Section                    | Description                                         |
+| -------------------------- | --------------------------------------------------- |
+| **Top Restaurants**        | Domino’s (442), Pizza Hut (322), KFC (309)          |
+| **Sales by City**          | Tirupati, Electronic City, Baner-Pune top revenue   |
+| **Rating by City**         | Highest feedback from Bikaner, Noida-1, Indirapuram |
+| **User by City**           | Most users in Bikaner, BTM-Bangalore, Indiranagar   |
+| **City Performance Table** | Lists city-wise sales, user gain/loss, orders       |
+
 
 💡 Key Insights
-Domino’s Pizza is the most rated restaurant with over 440+ reviews.
 
-Tirupati leads sales with ₹43M+, followed by Electronic City and Baner-Pune.
+* **Domino’s Pizza** is the most rated restaurant with over 440+ reviews.
 
-Bikaner has high user count (1.7K) but relatively low order volume, indicating under-conversion.
+* **Tirupati leads sales with ₹43M+**, followed by Electronic City and Baner-Pune.
 
-BTM and Indiranagar (Bangalore) are highly engaged in both user count and feedback.
+* **Bikaner has high user count (1.7K)** but relatively low order volume, indicating under-conversion.
 
-Some cities like GOTA and Sirsa show very low order numbers despite notable user base.
+* **BTM and Indiranagar (Bangalore)** are highly engaged in both user count and feedback.
+
+* Some cities like **GOTA and Sirsa** show very low order numbers despite notable user base.
 
 🚀 Business Growth Recommendations
-Target Underperforming High-User Cities
 
-Cities like Bikaner and GOTA have a large user base but low order rates.
+* Target Underperforming High-User Cities
 
-Use localized offers, restaurant onboarding, and geo-specific discounts.
+* Cities like Bikaner and GOTA have a large user base but low order rates.
 
-Leverage High-Rated Chains
+* Use localized offers, restaurant onboarding, and geo-specific discounts.
 
-Partner further with Domino’s, Pizza Hut, and KFC to create loyalty programs.
+* Leverage High-Rated Chains
 
-Use their success in one city as a playbook for others.
+* Partner further with Domino’s, Pizza Hut, and KFC to create loyalty programs.
 
-Boost Activity in Silent Cities
+* Use their success in one city as a playbook for others.
 
-Cities with high drop-off (e.g., Sirsa, Malviya Nagar) need retention focus.
+* Boost Activity in Silent Cities
 
-Run “We miss you!” campaigns or re-engagement ads.
+* Cities with high drop-off (e.g., Sirsa, Malviya Nagar) need retention focus.
 
-Replicate Success from Tirupati
+* Run “We miss you!” campaigns or re-engagement ads.
 
-Identify what works in Tirupati—delivery model, restaurants, pricing—and apply to cities with similar demographics.
+* Replicate Success from Tirupati
 
-Gather City-Specific Feedback
+* Identify what works in Tirupati—delivery model, restaurants, pricing—and apply to cities with similar demographics.
+
+* Gather City-Specific Feedback
 
 For cities with high losses (e.g., Rohini, Delhi), send short surveys post uninstalls or inactive periods to understand friction points.
 
