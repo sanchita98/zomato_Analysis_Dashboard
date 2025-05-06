@@ -44,7 +44,7 @@ Action: Expand service coverage in high-performing cities
 | **Yearly Sales Trend**     | Line chart showing sales growth in 2018–2019, then a drop in 2020                         |
 | **Food Type Sales**        | Displays Veg (156.2K), Non-Veg (139.9K), and Other sales with ratings                     |
 | **Top Cities by Quantity** | Interactive bar chart with dynamic Top N slicer                                           |
-| **Weekly Order Pattern**   | Shows Fridays and Saturdays are peak order days; Sunday is lowest                         |
+| **Weekly Order Pattern**   | Shows Fridays and Thursday are peak order days; Sunday is lowest                         |
 
 
 💡 Key Insights
